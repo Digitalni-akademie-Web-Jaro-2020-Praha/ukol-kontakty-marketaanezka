@@ -1,10 +1,71 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
-html { box-sizing: border-box; }
-*, :after, :before { box-sizing: inherit; }
+html {
+  box-sizing: border-box;
+}
+*,
+:after,
+:before {
+  box-sizing: inherit;
+}
 
 body {
-	font-family: sans-serif;
-	font-size: 14px;
+  font-family: sans-serif;
+  font-size: 14px;
 }
 
 /* ---------------------------------------------------- */
+/*
+.fullScreen {
+  border: 2px dashed red;
+}
+.teamMember {
+  border: 2px solid blue;
+}
+.bio {
+  border: 2px dashed greenyellow;
+}
+
+.pic {
+  border: 3px solid rgb(218, 100, 218);
+}
+*/
+
+h1 {
+  text-align: center;
+  margin-bottom: auto; /*toto dela to co chci, ale nevim presne jak to funguje*/
+}
+
+.fullScreen {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.teamMember {
+  width: 80vw;
+  height: 80vw;
+	margin: 0.5rem auto;
+  border: 2px solid rgb(184, 201, 241);
+  border-radius: 2.5%;
+  box-shadow: 0px 0.3rem 0.3rem 0.1rem rgb(201, 213, 240);
+
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.pic {
+  display: block;
+  margin: auto; 
+  max-width: 100%; /*chci aby se mi obrazek zvetsoval spolu s divem, ale moc to nefunguje, nezmensuje se, text ale zmizi*/
+  max-height: auto;
+  border-radius: 50%;
+}
+
+.bio {
+  text-align: center;
+  overflow: auto;
+  font-size: 3vw; /*responzivni font*/
+	padding: 0 1rem;
+	margin: auto; 
+}
