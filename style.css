@@ -44,7 +44,7 @@ h1 {
 .teamMember {
   width: 80vw;
   height: 80vw;
-	margin: 0.5rem auto;
+  margin: 0.5rem auto;
   border: 2px solid rgb(184, 201, 241);
   border-radius: 2.5%;
   box-shadow: 0px 0.3rem 0.3rem 0.1rem rgb(201, 213, 240);
@@ -56,8 +56,8 @@ h1 {
 
 .pic {
   display: block;
-  margin: auto; 
-  max-width: 100%; /*chci aby se mi obrazek zvetsoval spolu s divem, ale moc to nefunguje, nezmensuje se, text ale zmizi*/
+  margin: auto;
+  max-width: 100%;
   max-height: auto;
   border-radius: 50%;
 }
@@ -65,7 +65,50 @@ h1 {
 .bio {
   text-align: center;
   overflow: auto;
-  font-size: 3vw; /*responzivni font*/
-	padding: 0 1rem;
-	margin: auto; 
+  font-size: 14px; /*responzivni font*/
+  padding: 0 1rem;
+  margin: auto;
+}
+
+@media only screen and (min-width: 540px) {
+  .fullScreen {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .pic {
+    max-width: 80px;
+  }
+  .teamMember {
+    width: 48%;
+    max-height: 160px;
+    flex-direction: row;
+  }
+  .bio {
+    font-size: 1.5vw;
+    text-align: left;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  .fullScreen {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+  }
+  .pic {
+    max-width: 120px;
+   }
+  .teamMember {
+    width: 24%;
+    max-height: 24vw;
+    flex-direction: column;
+  }
+  .bio {
+    font-size: 1vw;
+    text-align: center;
+    padding: 0;
+    margin-top: 0;
+  }
 }
