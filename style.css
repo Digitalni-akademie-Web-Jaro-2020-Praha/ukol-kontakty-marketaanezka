@@ -45,10 +45,9 @@ h1 {
   width: 80vw;
   height: 80vw;
   margin: 0.5rem auto;
-  border: 2px solid rgb(184, 201, 241);
+  border: 2px solid #edf0ef;
   border-radius: 2.5%;
-  box-shadow: 0px 0.3rem 0.3rem 0.1rem rgb(201, 213, 240);
-
+  box-shadow: 0px 0.1rem 0.3rem 0.1rem #cce7e7;
   display: flex;
   flex-direction: column;
   padding: 1rem;
@@ -65,7 +64,7 @@ h1 {
 .bio {
   text-align: center;
   overflow: auto;
-  font-size: 14px; /*responzivni font*/
+  font-size: 13px;
   padding: 0 1rem;
   margin: auto;
 }
@@ -99,7 +98,8 @@ h1 {
   }
   .pic {
     max-width: 120px;
-   }
+    margin: auto auto 10px;
+  }
   .teamMember {
     width: 24%;
     max-height: 24vw;
